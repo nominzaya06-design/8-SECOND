@@ -1,0 +1,696 @@
+[
+  {
+    "id": 1,
+    "name": "Ribbon Blouse",
+    "description": "Ribbon Blouse with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 104000,
+    "oldPrice": null,
+    "image": "assets/images/real-blouse-skirt.png",
+    "stock": 17,
+    "colors": [
+      "hsl(38 39% 94%)",
+      "hsl(21 33% 27%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": false
+  },
+  {
+    "id": 2,
+    "name": "Gingham Check Blouse",
+    "description": "Gingham Check Blouse with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 119000,
+    "oldPrice": 156000,
+    "image": "assets/images/real-gingham-blouse.png",
+    "stock": 20,
+    "colors": [
+      "hsl(219 46% 20%)",
+      "hsl(0 0% 13%)"
+    ],
+    "bestSeller": true,
+    "onSale": true,
+    "newArrival": false
+  },
+  {
+    "id": 3,
+    "name": "Soft Blue Cardigan",
+    "description": "Soft Blue Cardigan with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Women",
+    "category": "Outerwear",
+    "price": 132000,
+    "oldPrice": 156000,
+    "image": "assets/images/real-blue-cardigan.png",
+    "stock": 23,
+    "colors": [
+      "hsl(210 28% 70%)",
+      "hsl(38 35% 90%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": false
+  },
+  {
+    "id": 4,
+    "name": "Rockstar Cat Tee",
+    "description": "Rockstar Cat Tee with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Unisex",
+    "category": "Tops",
+    "price": 83000,
+    "oldPrice": 93000,
+    "image": "assets/images/real-rockstar-tee.png",
+    "stock": 26,
+    "colors": [
+      "hsl(0 0% 23%)",
+      "hsl(0 0% 7%)"
+    ],
+    "bestSeller": true,
+    "onSale": true,
+    "newArrival": false
+  },
+  {
+    "id": 5,
+    "name": "Ruched Hobo Bag",
+    "description": "Ruched Hobo Bag with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Unisex",
+    "category": "Accessories",
+    "price": 208000,
+    "oldPrice": 260000,
+    "image": "assets/images/real-black-bag.png",
+    "stock": 29,
+    "colors": [
+      "hsl(0 0% 7%)",
+      "hsl(39 24% 69%)"
+    ],
+    "bestSeller": true,
+    "onSale": true,
+    "newArrival": false
+  },
+  {
+    "id": 6,
+    "name": "Jaws Graphic Tee",
+    "description": "Jaws Graphic Tee with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Men",
+    "category": "Tops",
+    "price": 86000,
+    "oldPrice": 104000,
+    "image": "assets/images/real-jaws-tee.png",
+    "stock": 32,
+    "colors": [
+      "hsl(0 0% 92%)",
+      "hsl(0 0% 18%)"
+    ],
+    "bestSeller": true,
+    "onSale": true,
+    "newArrival": false
+  },
+  {
+    "id": 7,
+    "name": "Straight Denim Jeans",
+    "description": "Straight Denim Jeans with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Unisex",
+    "category": "Bottoms",
+    "price": 182000,
+    "oldPrice": null,
+    "image": "assets/images/product-jeans.png",
+    "stock": 35,
+    "colors": [
+      "hsl(215 37% 48%)",
+      "hsl(215 26% 28%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": false
+  },
+  {
+    "id": 8,
+    "name": "Essential Cotton Shirt",
+    "description": "Essential Cotton Shirt with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Men",
+    "category": "Tops",
+    "price": 130000,
+    "oldPrice": null,
+    "image": "assets/images/product-shirt.png",
+    "stock": 38,
+    "colors": [
+      "hsl(0 0% 96%)",
+      "hsl(212 31% 72%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": false
+  },
+  {
+    "id": 9,
+    "name": "Minimal Zip Jacket",
+    "description": "Minimal Zip Jacket with a clean silhouette designed for comfortable everyday styling.",
+    "gender": "Men",
+    "category": "Outerwear",
+    "price": 286000,
+    "oldPrice": 338000,
+    "image": "assets/images/product-jacket.png",
+    "stock": 41,
+    "colors": [
+      "hsl(0 0% 15%)",
+      "hsl(40 12% 61%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": false
+  },
+  {
+    "id": 10,
+    "name": "Bambi Graphic Tee",
+    "description": "Bambi Graphic Tee with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 93000,
+    "oldPrice": null,
+    "image": "assets/images/women-bambi-graphic-tee.png",
+    "stock": 34,
+    "colors": [
+      "hsl(0 0% 72%)",
+      "hsl(0 0% 18%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 11,
+    "name": "Layered Rib Top",
+    "description": "Layered Rib Top with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 112000,
+    "oldPrice": null,
+    "image": "assets/images/women-brown-layered-rib-top.png",
+    "stock": 17,
+    "colors": [
+      "hsl(24 25% 24%)",
+      "hsl(0 0% 78%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 12,
+    "name": "Soft Henley Tee",
+    "description": "Soft Henley Tee with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 101000,
+    "oldPrice": 119000,
+    "image": "assets/images/women-gray-henley-tee.png",
+    "stock": 24,
+    "colors": [
+      "hsl(0 0% 72%)",
+      "hsl(0 0% 22%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 13,
+    "name": "Soft Wide Lounge Pants",
+    "description": "Soft Wide Lounge Pants with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Bottoms",
+    "price": 145000,
+    "oldPrice": null,
+    "image": "assets/images/women-gray-wide-lounge-pants.png",
+    "stock": 31,
+    "colors": [
+      "hsl(0 0% 58%)",
+      "hsl(0 0% 18%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 14,
+    "name": "Utility Cargo Shorts",
+    "description": "Utility Cargo Shorts with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Bottoms",
+    "price": 130000,
+    "oldPrice": null,
+    "image": "assets/images/men-charcoal-cargo-shorts.png",
+    "stock": 14,
+    "colors": [
+      "hsl(100 7% 28%)",
+      "hsl(0 0% 15%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 15,
+    "name": "Black Wide Leg Pants",
+    "description": "Black Wide Leg Pants with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Bottoms",
+    "price": 169000,
+    "oldPrice": null,
+    "image": "assets/images/women-black-wide-pants.png",
+    "stock": 21,
+    "colors": [
+      "hsl(0 0% 8%)",
+      "hsl(0 0% 34%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 16,
+    "name": "Ivory Wide Jeans",
+    "description": "Ivory Wide Jeans with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Bottoms",
+    "price": 182000,
+    "oldPrice": 208000,
+    "image": "assets/images/women-ivory-wide-jeans.png",
+    "stock": 28,
+    "colors": [
+      "hsl(42 31% 94%)",
+      "hsl(0 0% 12%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 17,
+    "name": "Charcoal Balloon Pants",
+    "description": "Charcoal Balloon Pants with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Bottoms",
+    "price": 177000,
+    "oldPrice": null,
+    "image": "assets/images/men-charcoal-balloon-pants.png",
+    "stock": 35,
+    "colors": [
+      "hsl(210 7% 31%)",
+      "hsl(0 0% 15%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 18,
+    "name": "Washed Denim Bermuda Shorts",
+    "description": "Washed Denim Bermuda Shorts with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Bottoms",
+    "price": 151000,
+    "oldPrice": null,
+    "image": "assets/images/men-washed-denim-bermuda.png",
+    "stock": 18,
+    "colors": [
+      "hsl(210 8% 27%)",
+      "hsl(0 0% 14%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 19,
+    "name": "Cocoa Utility Jacket",
+    "description": "Cocoa Utility Jacket with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Outerwear",
+    "price": 208000,
+    "oldPrice": 234000,
+    "image": "assets/images/women-cocoa-utility-jacket.png",
+    "stock": 25,
+    "colors": [
+      "hsl(25 18% 26%)",
+      "hsl(40 14% 73%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 20,
+    "name": "Flower Button Cardigan",
+    "description": "Flower Button Cardigan with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Outerwear",
+    "price": 164000,
+    "oldPrice": null,
+    "image": "assets/images/women-navy-flower-cardigan.png",
+    "stock": 32,
+    "colors": [
+      "hsl(220 21% 16%)",
+      "hsl(75 17% 44%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 21,
+    "name": "Contrast Trim Knit Top",
+    "description": "Contrast Trim Knit Top with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 127000,
+    "oldPrice": null,
+    "image": "assets/images/women-navy-trim-knit-top.png",
+    "stock": 15,
+    "colors": [
+      "hsl(222 31% 16%)",
+      "hsl(202 25% 83%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 22,
+    "name": "Black Zip Shirt Jacket",
+    "description": "Black Zip Shirt Jacket with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Outerwear",
+    "price": 192000,
+    "oldPrice": null,
+    "image": "assets/images/men-black-zip-shirt.png",
+    "stock": 22,
+    "colors": [
+      "hsl(0 0% 9%)",
+      "hsl(0 0% 30%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 23,
+    "name": "Faux Leather Racer Jacket",
+    "description": "Faux Leather Racer Jacket with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Outerwear",
+    "price": 338000,
+    "oldPrice": 390000,
+    "image": "assets/images/men-black-racer-jacket.png",
+    "stock": 29,
+    "colors": [
+      "hsl(0 0% 8%)",
+      "hsl(0 0% 24%)"
+    ],
+    "bestSeller": true,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 24,
+    "name": "Layered Rib Tank",
+    "description": "Layered Rib Tank with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 104000,
+    "oldPrice": null,
+    "image": "assets/images/women-lime-layered-tank.png",
+    "stock": 12,
+    "colors": [
+      "hsl(68 39% 76%)",
+      "hsl(0 0% 90%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 25,
+    "name": "Gingham Ruched Blouse",
+    "description": "Gingham Ruched Blouse with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Tops",
+    "price": 119000,
+    "oldPrice": null,
+    "image": "assets/images/women-gingham-ruched-blouse.png",
+    "stock": 19,
+    "colors": [
+      "hsl(0 0% 20%)",
+      "hsl(0 0% 91%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 26,
+    "name": "Blue Graphic Tee",
+    "description": "Blue Graphic Tee with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Tops",
+    "price": 96000,
+    "oldPrice": 112000,
+    "image": "assets/images/men-blue-graphic-tee.png",
+    "stock": 26,
+    "colors": [
+      "hsl(225 58% 64%)",
+      "hsl(0 0% 18%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 27,
+    "name": "Two-Tone Message Cap",
+    "description": "Two-Tone Message Cap with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Unisex",
+    "category": "Accessories",
+    "price": 78000,
+    "oldPrice": null,
+    "image": "assets/images/unisex-brown-two-tone-cap.png",
+    "stock": 33,
+    "colors": [
+      "hsl(29 24% 31%)",
+      "hsl(40 21% 80%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 28,
+    "name": "Washed Quiet Nights Cap",
+    "description": "Washed Quiet Nights Cap with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Accessories",
+    "price": 83000,
+    "oldPrice": null,
+    "image": "assets/images/women-washed-black-cap.png",
+    "stock": 16,
+    "colors": [
+      "hsl(0 0% 20%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 29,
+    "name": "Polar Vortex Cap",
+    "description": "Polar Vortex Cap with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Unisex",
+    "category": "Accessories",
+    "price": 78000,
+    "oldPrice": null,
+    "image": "assets/images/unisex-purple-polar-cap.png",
+    "stock": 23,
+    "colors": [
+      "hsl(258 19% 24%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 30,
+    "name": "Ciel Étoilé Denim Cap",
+    "description": "Ciel Étoilé Denim Cap with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Accessories",
+    "price": 86000,
+    "oldPrice": null,
+    "image": "assets/images/women-navy-french-cap.png",
+    "stock": 30,
+    "colors": [
+      "hsl(222 32% 17%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 31,
+    "name": "Forest Collegiate Cap",
+    "description": "Forest Collegiate Cap with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Men",
+    "category": "Accessories",
+    "price": 83000,
+    "oldPrice": 96000,
+    "image": "assets/images/men-forest-logo-cap.png",
+    "stock": 13,
+    "colors": [
+      "hsl(146 22% 24%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 32,
+    "name": "Character Charm Keyring",
+    "description": "Character Charm Keyring with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Accessories",
+    "price": 52000,
+    "oldPrice": null,
+    "image": "assets/images/women-character-keyring.png",
+    "stock": 20,
+    "colors": [
+      "hsl(275 30% 73%)",
+      "hsl(345 60% 74%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 33,
+    "name": "KISS Logo Necklace",
+    "description": "KISS Logo Necklace with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Unisex",
+    "category": "Accessories",
+    "price": 75000,
+    "oldPrice": null,
+    "image": "assets/images/unisex-kiss-necklace.png",
+    "stock": 27,
+    "colors": [
+      "hsl(0 0% 76%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 34,
+    "name": "Daisy Leather Belt",
+    "description": "Daisy Leather Belt with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Unisex",
+    "category": "Accessories",
+    "price": 117000,
+    "oldPrice": null,
+    "image": "assets/images/unisex-daisy-leather-belt.png",
+    "stock": 34,
+    "colors": [
+      "hsl(0 0% 8%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 35,
+    "name": "Black Nylon Shoulder Bag",
+    "description": "Black Nylon Shoulder Bag with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Accessories",
+    "price": 156000,
+    "oldPrice": 182000,
+    "image": "assets/images/women-black-nylon-bag.png",
+    "stock": 17,
+    "colors": [
+      "hsl(0 0% 12%)"
+    ],
+    "bestSeller": true,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 36,
+    "name": "Navy Daisy Tote Bag",
+    "description": "Navy Daisy Tote Bag with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Accessories",
+    "price": 143000,
+    "oldPrice": null,
+    "image": "assets/images/women-navy-daisy-tote.png",
+    "stock": 24,
+    "colors": [
+      "hsl(223 39% 29%)",
+      "hsl(45 20% 86%)"
+    ],
+    "bestSeller": false,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 37,
+    "name": "Polka Dot Maxi Dress",
+    "description": "Polka Dot Maxi Dress with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Dresses",
+    "price": 208000,
+    "oldPrice": null,
+    "image": "assets/images/women-polka-dot-maxi-dress.png",
+    "stock": 31,
+    "colors": [
+      "hsl(0 0% 10%)",
+      "hsl(40 25% 83%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  },
+  {
+    "id": 38,
+    "name": "Layered Maxi Skirt",
+    "description": "Layered Maxi Skirt with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Bottoms",
+    "price": 179000,
+    "oldPrice": 203000,
+    "image": "assets/images/women-layered-maxi-skirt.png",
+    "stock": 14,
+    "colors": [
+      "hsl(0 0% 9%)",
+      "hsl(0 0% 62%)"
+    ],
+    "bestSeller": false,
+    "onSale": true,
+    "newArrival": true
+  },
+  {
+    "id": 39,
+    "name": "Minimal Black Mini Dress",
+    "description": "Minimal Black Mini Dress with an easy silhouette designed for everyday 8 Seconds inspired styling.",
+    "gender": "Women",
+    "category": "Dresses",
+    "price": 190000,
+    "oldPrice": null,
+    "image": "assets/images/women-black-mini-dress.png",
+    "stock": 21,
+    "colors": [
+      "hsl(0 0% 7%)"
+    ],
+    "bestSeller": true,
+    "onSale": false,
+    "newArrival": true
+  }
+]
