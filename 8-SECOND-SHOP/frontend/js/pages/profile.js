@@ -1,7 +1,6 @@
 import { accountNavigation } from "../components/account-nav.js";
 import { AuthService } from "../auth-service.js";
-import { OrderService } from "../order-service.js";
-import { getCartCount, getCurrentUser, getWishlist } from "../store.js";
+import { getCartCount, getCurrentUser, getOrderCount, getWishlist } from "../store.js";
 import { escapeHTML, showToast } from "../utils.js";
 
 export function renderProfile() {
@@ -20,7 +19,7 @@ export function renderProfile() {
                 <p class="page-subtitle">${escapeHTML(user.email)} · ${escapeHTML(user.role)}</p>
 
                 <div class="dashboard-cards">
-                    <a class="dashboard-card" href="#/orders"><strong id="profile-order-count">—</strong><span>Orders</span></a>
+                    <a class="dashboard-card" href="#/orders"><strong>${getOrderCount()}</strong><span>Orders</span></a>
                     <a class="dashboard-card" href="#/wishlist"><strong>${getWishlist().length}</strong><span>Wishlist</span></a>
                     <a class="dashboard-card" href="#/cart"><strong>${getCartCount()}</strong><span>Bag Items</span></a>
                 </div>
@@ -37,16 +36,6 @@ export function renderProfile() {
 export function mountProfile() {
     const user = getCurrentUser();
     if (!user) return;
-
-    OrderService.list()
-        .then(orders => {
-            const count = document.querySelector("#profile-order-count");
-            if (count) count.textContent = orders.length;
-        })
-        .catch(() => {
-            const count = document.querySelector("#profile-order-count");
-            if (count) count.textContent = "0";
-        });
 
     document.querySelector("#logout-button")?.addEventListener("click", async () => {
         try {

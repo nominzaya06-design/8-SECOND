@@ -1,18 +1,25 @@
 import { Product } from "../models/Product.js";
+import { Order } from "../models/Order.js";
 import { User } from "../models/User.js";
 import { cleanText, positiveInteger } from "../utils/validation.js";
 
-function accountData(user) {
-    return {
+function accountData(user, orderCount) {
+    const data = {
         cart: user?.cart || [],
         wishlist: user?.wishlist || []
     };
+
+    if (Number.isInteger(orderCount)) data.orderCount = orderCount;
+    return data;
 }
 
 export async function getAccount(req, res, next) {
     try {
-        const user = await User.findById(req.user._id).select("cart wishlist").lean();
-        res.json(accountData(user));
+        const [user, orderCount] = await Promise.all([
+            User.findById(req.user._id).select("cart wishlist").lean(),
+            Order.countDocuments({ user: req.user._id })
+        ]);
+        res.json(accountData(user, orderCount));
     } catch (error) {
         next(error);
     }
