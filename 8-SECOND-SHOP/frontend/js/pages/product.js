@@ -113,6 +113,7 @@ export function renderProduct(product, products) {
     const showOldPrice = product.oldPrice && product.oldPrice > product.price;
 
     return `<main class="standard-page page-width">
+        <button class="product-back-button" id="product-back" type="button">← Back</button>
         <section class="product-detail">
             <div class="product-detail-image">
                 <img src="${escapeHTML(product.image)}" alt="${escapeHTML(product.name)}">
@@ -166,6 +167,11 @@ export function mountProduct(product) {
     let quantity = product.stock > 0 ? 1 : 0;
     const quantityValue = document.querySelector("#quantity-value");
 
+    document.querySelector("#product-back")?.addEventListener("click", () => {
+        if (history.length > 1) history.back();
+        else location.hash = "#/home";
+    });
+
     document.querySelector("#color-options")?.addEventListener("click", event => {
         const button = event.target.closest("[data-color]");
         if (!button) return;
@@ -211,14 +217,30 @@ export function mountProduct(product) {
             return;
         }
 
+        const button = event.currentTarget;
+        if (button.dataset.pending === "true") return;
+
+        const label = button.querySelector("span");
+        const wasAdded = button.classList.contains("active");
+
+        function updateButton(added) {
+            button.classList.toggle("active", added);
+            button.setAttribute("aria-pressed", String(added));
+            label.textContent = added ? "Saved" : "Wishlist";
+        }
+
+        button.dataset.pending = "true";
+        updateButton(!wasAdded);
+
         try {
             const added = await AccountService.toggleWishlist(product.id);
-            event.currentTarget.classList.toggle("active", added);
-            event.currentTarget.setAttribute("aria-pressed", String(added));
-            event.currentTarget.querySelector("span").textContent = added ? "Saved" : "Wishlist";
+            updateButton(added);
             showToast(added ? "Saved to wishlist." : "Removed from wishlist.");
         } catch (error) {
+            updateButton(wasAdded);
             showToast(error.message);
+        } finally {
+            delete button.dataset.pending;
         }
     });
 

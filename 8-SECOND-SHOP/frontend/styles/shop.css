@@ -236,6 +236,22 @@
 }
 
 /* Product detail */
+.product-back-button {
+    margin-bottom: 1.25rem;
+    padding: 0;
+    border: 0;
+    color: var(--color-muted);
+    background: transparent;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.product-back-button:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
 .product-detail {
     display: grid;
     grid-template-columns: minmax(0, 1.05fr) minmax(20rem, 0.95fr);

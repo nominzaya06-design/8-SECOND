@@ -50,6 +50,12 @@ function updateWishlistBadges() {
     });
 }
 
+function updateWishlistButton(button, added) {
+    button.classList.toggle("active", added);
+    button.setAttribute("aria-pressed", String(added));
+    button.setAttribute("aria-label", `${added ? "Remove from" : "Add to"} wishlist`);
+}
+
 document.addEventListener("shop:statechange", updateWishlistBadges);
 
 app.addEventListener("click", async event => {
@@ -66,23 +72,24 @@ app.addEventListener("click", async event => {
     }
 
     const id = Number(button.dataset.wishlist);
-    let added;
+    if (button.dataset.pending === "true") return;
+
+    const wasAdded = button.classList.contains("active");
+    button.dataset.pending = "true";
+    updateWishlistButton(button, !wasAdded);
 
     try {
-        added = await AccountService.toggleWishlist(id);
+        const added = await AccountService.toggleWishlist(id);
+        updateWishlistButton(button, added);
+        showToast(added ? "Saved to wishlist." : "Removed from wishlist.");
+
+        if (getRoute().name === "wishlist") renderRoute();
     } catch (error) {
+        updateWishlistButton(button, wasAdded);
         showToast(error.message);
-        return;
+    } finally {
+        delete button.dataset.pending;
     }
-
-    button.classList.toggle("active", added);
-    button.setAttribute("aria-pressed", String(added));
-    button.setAttribute("aria-label", `${added ? "Remove from" : "Add to"} wishlist`);
-
-    updateWishlistBadges();
-    showToast(added ? "Saved to wishlist." : "Removed from wishlist.");
-
-    if (getRoute().name === "wishlist") renderRoute();
 });
 
 const titles = {
