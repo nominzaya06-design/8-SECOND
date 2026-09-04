@@ -1,9 +1,9 @@
+import { createElement as h, useEffect, useState } from "react";
+import { createRoot } from "react-dom/client";
+
 export function mountAdminStats() {
     const rootElement = document.querySelector("#react-admin-stats-root");
-    if (!rootElement || !window.React || !window.ReactDOM) return;
-
-    const { createElement: h, useEffect, useState } = window.React;
-    const { createRoot } = window.ReactDOM;
+    if (!rootElement) return;
 
     function AdminStats() {
         const [stats, setStats] = useState(null);
@@ -35,3 +35,5 @@ export function mountAdminStats() {
 
     createRoot(rootElement).render(h(AdminStats));
 }
+
+window.mountAdminStats = mountAdminStats;

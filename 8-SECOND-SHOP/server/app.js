@@ -35,14 +35,6 @@ app.use("/api/products", productsRoutes);
 app.use("/api/orders", ordersRoutes);
 app.use("/api/admin", adminRoutes);
 
-app.get("/vendor/react.production.min.js", (_req, res) => {
-    res.sendFile(path.join(root, "node_modules/react/umd/react.production.min.js"));
-});
-
-app.get("/vendor/react-dom.production.min.js", (_req, res) => {
-    res.sendFile(path.join(root, "node_modules/react-dom/umd/react-dom.production.min.js"));
-});
-
 app.use(express.static(frontendDir));
 
 app.use((req, res, next) => {

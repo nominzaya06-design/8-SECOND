@@ -1,9 +1,10 @@
 import { AdminService } from "../admin-service.js";
 import { AccountService } from "../account-service.js";
 import { ProductService } from "../data.js";
-import { mountAdminStats } from "../react/admin-stats.js";
 import { getCurrentUser } from "../store.js";
 import { escapeHTML, formatDate, formatPrice, showToast } from "../utils.js";
+
+const mountAdminStats = () => window.mountAdminStats?.();
 
 const COLOR_OPTIONS = [
     ["Black", "hsl(0 0% 15%)"],
@@ -315,7 +316,6 @@ export function mountAdmin(products, rerender) {
             await AdminService.updateOrderStatus(orderId, select.value);
             showToast("Order status updated.");
             await loadOrders();
-            mountAdminStats();
         } catch (error) {
             showToast(error.message);
         } finally {
